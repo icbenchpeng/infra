@@ -1,0 +1,7 @@
+export PATH=/home/project/infra:$PATH
+
+user=`whoami`
+if [ -f /home/project/$user/.bashrc ]; then
+  source /home/project/$user/.bashrc
+fi
+
