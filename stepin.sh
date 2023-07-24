@@ -5,7 +5,7 @@ ARGC=$#
 
 BIN_FILE=$(readlink -f $0)
 BIN_PATH=$(dirname ${BIN_FILE})
-source $BIN_PATH/eden.docker.cfg
+source $BIN_PATH/docker.cfg
 
 if [ $ARGC -gt 0 ]; then
   next_docker_img=0
